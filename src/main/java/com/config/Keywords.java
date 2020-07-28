@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -220,5 +221,12 @@ public class Keywords {
 	 */
 	public static void closeAllBrowser() {
 		Constants.driver.quit();
+	}
+
+	public static void selectValueFromDropdown(String locatorType, String locatorValue, String textToSelect) {
+		
+		WebElement element = getWebElement(locatorType, locatorValue);
+		Select select = new Select(element);
+		select.selectByVisibleText(textToSelect);
 	}
 }
