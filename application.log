@@ -394,3 +394,8 @@
 2020-07-29 17:17:25 7806 INFO  [main] - Verify 'Living' Menu is visible or not
 2020-07-29 17:17:25 7919 INFO  [main] - Verify 'Sofa Set' subMenu visible or not
 2020-07-29 17:17:25 8022 INFO  [main] - Verify 'Sofa Set' text
+2020-08-01 19:28:53 0 INFO  [main] - Open browser ,Entering appliction url and maximizing browser
+2020-08-01 19:33:59 1 INFO  [main] - Open browser ,Entering appliction url and maximizing browser
+2020-08-01 19:34:10 11298 INFO  [main] - Verify 'Living' Menu is visible or not
+2020-08-01 19:34:10 11607 INFO  [main] - Verify 'Sofa Set' subMenu visible or not
+2020-08-01 19:34:11 11856 INFO  [main] - Verify 'Sofa Set' text
