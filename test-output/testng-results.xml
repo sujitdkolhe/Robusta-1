@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34066" started-at="2020-08-01T14:03:43Z" finished-at="2020-08-01T14:04:17Z">
+  <suite name="Default suite" duration-ms="31342" started-at="2020-08-03T14:00:10Z" finished-at="2020-08-03T14:00:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34066" started-at="2020-08-01T14:03:43Z" finished-at="2020-08-01T14:04:17Z">
-      <class name="com.test.LivingPageTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.test.LivingPageTest@4667ae56]" name="openBrowser" is-config="true" duration-ms="26048" started-at="2020-08-01T14:03:43Z" finished-at="2020-08-01T14:04:09Z">
+    <test name="Default test" duration-ms="31342" started-at="2020-08-03T14:00:10Z" finished-at="2020-08-03T14:00:42Z">
+      <class name="com.test.StudyPageTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.test.StudyPageTest@4667ae56]" name="openBrowser" is-config="true" duration-ms="27363" started-at="2020-08-03T14:00:10Z" finished-at="2020-08-03T14:00:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="livingMenuDisplay()[pri:1, instance:com.test.LivingPageTest@4667ae56]" name="livingMenuDisplay" duration-ms="707" started-at="2020-08-01T14:04:09Z" finished-at="2020-08-01T14:04:10Z">
+        <test-method status="PASS" signature="studyMenuDisplay()[pri:1, instance:com.test.StudyPageTest@4667ae56]" name="studyMenuDisplay" duration-ms="467" started-at="2020-08-03T14:00:38Z" finished-at="2020-08-03T14:00:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- livingMenuDisplay -->
-        <test-method status="PASS" signature="sofa_setSubmenu_Display()[pri:2, instance:com.test.LivingPageTest@4667ae56]" name="sofa_setSubmenu_Display" duration-ms="302" started-at="2020-08-01T14:04:10Z" finished-at="2020-08-01T14:04:10Z">
+        </test-method> <!-- studyMenuDisplay -->
+        <test-method status="PASS" signature="studyTablesSubmenu_Display()[pri:2, instance:com.test.StudyPageTest@4667ae56]" name="studyTablesSubmenu_Display" duration-ms="257" started-at="2020-08-03T14:00:38Z" finished-at="2020-08-03T14:00:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sofa_setSubmenu_Display -->
-        <test-method status="PASS" signature="getSofa_set_SubmenuText()[pri:3, instance:com.test.LivingPageTest@4667ae56]" name="getSofa_set_SubmenuText" duration-ms="242" started-at="2020-08-01T14:04:10Z" finished-at="2020-08-01T14:04:11Z">
+        </test-method> <!-- studyTablesSubmenu_Display -->
+        <test-method status="PASS" signature="getStudyTablesSubmenuText()[pri:3, instance:com.test.StudyPageTest@4667ae56]" name="getStudyTablesSubmenuText" duration-ms="187" started-at="2020-08-03T14:00:39Z" finished-at="2020-08-03T14:00:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getSofa_set_SubmenuText -->
-        <test-method status="PASS" signature="getSofasetItems()[pri:4, instance:com.test.LivingPageTest@4667ae56]" name="getSofasetItems" duration-ms="842" started-at="2020-08-01T14:04:11Z" finished-at="2020-08-01T14:04:12Z">
+        </test-method> <!-- getStudyTablesSubmenuText -->
+        <test-method status="PASS" signature="getStudyTablesItems()[pri:4, instance:com.test.StudyPageTest@4667ae56]" name="getStudyTablesItems" duration-ms="1021" started-at="2020-08-03T14:00:39Z" finished-at="2020-08-03T14:00:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getSofasetItems -->
-        <test-method status="PASS" signature="close_Window_And_quiteDriver()[pri:0, instance:com.test.LivingPageTest@4667ae56]" name="close_Window_And_quiteDriver" is-config="true" duration-ms="5717" started-at="2020-08-01T14:04:12Z" finished-at="2020-08-01T14:04:17Z">
+        </test-method> <!-- getStudyTablesItems -->
+        <test-method status="PASS" signature="close_Window_And_quiteDriver()[pri:0, instance:com.test.StudyPageTest@4667ae56]" name="close_Window_And_quiteDriver" is-config="true" duration-ms="1894" started-at="2020-08-03T14:00:40Z" finished-at="2020-08-03T14:00:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_Window_And_quiteDriver -->
-      </class> <!-- com.test.LivingPageTest -->
+      </class> <!-- com.test.StudyPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

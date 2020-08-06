@@ -399,3 +399,27 @@
 2020-08-01 19:34:10 11298 INFO  [main] - Verify 'Living' Menu is visible or not
 2020-08-01 19:34:10 11607 INFO  [main] - Verify 'Sofa Set' subMenu visible or not
 2020-08-01 19:34:11 11856 INFO  [main] - Verify 'Sofa Set' text
+2020-08-02 22:19:54 0 INFO  [main] - Open browser ,Entering appliction url and maximizing browser
+2020-08-02 22:20:05 11121 INFO  [main] - Verify 'Study' Menu is visible or not
+2020-08-02 22:20:05 11228 INFO  [main] - Verify 'Study_Tables' subMenu visible or not
+2020-08-02 22:20:05 11326 INFO  [main] - Verify 'Study Tables' text
+2020-08-03 19:17:27 0 INFO  [main] - Open browser ,Entering appliction url and maximizing browser
+2020-08-03 19:17:39 11888 INFO  [main] - Verify 'Study' Menu is visible or not
+2020-08-03 19:17:39 12227 INFO  [main] - Verify 'Study_Tables' subMenu visible or not
+2020-08-03 19:17:40 13058 INFO  [main] - Verify 'Study Tables' text
+2020-08-03 19:23:18 0 INFO  [main] - Open browser ,Entering appliction url and maximizing browser
+2020-08-03 19:23:30 11309 INFO  [main] - Verify 'Study' Menu is visible or not
+2020-08-03 19:23:30 11723 INFO  [main] - Verify 'Study_Tables' subMenu visible or not
+2020-08-03 19:23:30 11920 INFO  [main] - Verify 'Study Tables' text
+2020-08-03 19:24:53 0 INFO  [main] - Open browser ,Entering appliction url and maximizing browser
+2020-08-03 19:25:04 11193 INFO  [main] - Verify 'Study' Menu is visible or not
+2020-08-03 19:25:04 11428 INFO  [main] - Verify 'Study_Tables' subMenu visible or not
+2020-08-03 19:25:05 11893 INFO  [main] - Verify 'Study Tables' text
+2020-08-03 19:26:33 0 INFO  [main] - Open browser ,Entering appliction url and maximizing browser
+2020-08-03 19:26:44 11067 INFO  [main] - Verify 'Study' Menu is visible or not
+2020-08-03 19:26:44 11239 INFO  [main] - Verify 'Study_Tables' subMenu visible or not
+2020-08-03 19:26:45 11539 INFO  [main] - Verify 'Study Tables' text
+2020-08-03 19:30:27 0 INFO  [main] - Open browser ,Entering appliction url and maximizing browser
+2020-08-03 19:30:38 11024 INFO  [main] - Verify 'Study' Menu is visible or not
+2020-08-03 19:30:39 11289 INFO  [main] - Verify 'Study_Tables' subMenu visible or not
+2020-08-03 19:30:39 11477 INFO  [main] - Verify 'Study Tables' text

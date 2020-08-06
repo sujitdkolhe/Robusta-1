@@ -204,10 +204,24 @@ public class Keywords {
 	/*
 	 * This method is used to sleep methods
 	 * 
+	 * @author Sujit Kolhe
 	 */
 	public static void sleep() {
 		try {
 			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			System.out.println("Timeout: "+e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	/*
+	 * This method is used to sleep methods
+	 * 
+	 * @author Manisha Ramesh Mehtre
+	 */
+	public static void sleep(int time) {
+		try {
+			Thread.sleep(time);
 		} catch (InterruptedException e) {
 			System.out.println("Timeout: "+e.getMessage());
 			e.printStackTrace();
