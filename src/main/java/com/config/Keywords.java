@@ -205,9 +205,9 @@ public class Keywords {
 	 * This method is used to sleep methods
 	 * 
 	 */
-	public static void sleep() {
+	public static void sleep(int time) {
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(time);
 		} catch (InterruptedException e) {
 			System.out.println("Timeout: "+e.getMessage());
 			e.printStackTrace();
@@ -235,7 +235,7 @@ public class Keywords {
 		System.out.println("Expected Size is:-"+Constants.jsonArray.size());	
 		Iterator itr = Constants.jsonArray.iterator();
 		while(itr.hasNext()) {
-			System.out.println("Expected List"+itr.next());
+			Constants.expected=(String) itr.next();
 		}
 		Constants.expectedList = new ArrayList();
 		String[] getList = new String[ Constants.jsonArray.size()];
@@ -243,11 +243,7 @@ public class Keywords {
 			getList[i]=(String)Constants.jsonArray.get(i);
 			Constants.expectedList.add(i,getList[i]);
 		}
-		
-			System.out.println("Expected Size is :-"+Constants.expectedList.size());
 	}
-	
-
 
 	/**
 	 * This method is used to Close the current window, quitting the browser if it's

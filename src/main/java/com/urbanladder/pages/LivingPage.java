@@ -25,7 +25,7 @@ public class LivingPage {
 	@FindBy(css = "li.topnav_item.livingunit > div > div > ul > li:nth-child(5) > div > a")
 	private WebElement StorageLink;
 
-	@FindBy(css = "//a[text()='Balcony & Outdoor']")
+	@FindBy(xpath = "//a[text()='Balcony & Outdoor']")
 	private WebElement Balcony_OutdoorLink;
 
 	// This is to Initializing the page Objects

@@ -30,7 +30,7 @@ public class LivingPageTest {
 		Assert.assertEquals(expectedUrl, "https://www.urbanladder.com/");
 		// Keywords.maximizeBrowser();
 		Keywords.loggerInfo("Open browser ,Entering appliction url and maximizing browser");
-		Keywords.sleep();
+		Keywords.sleep(10000);
 		Keywords.clickOnElement("CSS", PropertyUtility.getProperty("StatingPop_up", LivingPagePropertyPath));
 		livingpage = new LivingPage();
 	}
@@ -53,10 +53,10 @@ public class LivingPageTest {
 
 	@Test(priority = 3)
 	public void get_Sofa_set_SubMenuList() {
-		List<WebElement> list = Constants.driver.findElements(
+		List<WebElement> sofaSetList = Constants.driver.findElements(
 				By.cssSelector(PropertyUtility.getProperty("Sofa_Set_SubMenu_List", LivingPagePropertyPath)));
 		Constants.actualList = new ArrayList<String>();
-		Iterator<WebElement> itr = list.iterator();
+		Iterator<WebElement> itr = sofaSetList.iterator();
 		while (itr.hasNext()) {
 			Constants.actualList.add(itr.next().getText());
 		}
@@ -78,10 +78,10 @@ public class LivingPageTest {
 
 	@Test(priority = 5)
 	public void get_Sofa_cum_Bed_SubMenuList() {
-		List<WebElement> Sofa_cum_Bedlist = Constants.driver.findElements(
+		List<WebElement> sofa_cum_BedList = Constants.driver.findElements(
 				By.cssSelector(PropertyUtility.getProperty("Sofa_cum_Bed_SubMenu_List", LivingPagePropertyPath)));
 		Constants.actualList = new ArrayList<String>();
-		Iterator<WebElement> itr = Sofa_cum_Bedlist.iterator();
+		Iterator<WebElement> itr = sofa_cum_BedList.iterator();
 		while (itr.hasNext()) {
 			Constants.actualList.add(itr.next().getText());
 		}
@@ -96,17 +96,17 @@ public class LivingPageTest {
 	@Test(priority = 6)
 	public void get_Chair_SubMenuText() {
 		Constants.actual = livingpage.getChairSubMenuText();
-		Constants.expected = "Chair";
+		Constants.expected = "Chairs";
 		Assert.assertEquals(Constants.actual, Constants.expected);
-		Keywords.loggerInfo("Verify actual 'Chair' text");
+		Keywords.loggerInfo("Verify actual 'Chairs' text");
 	}
 
 	@Test(priority = 7)
 	public void get_Chair_SubMenuList() {
-		List<WebElement> Chairlist = Constants.driver.findElements(
+		List<WebElement> chairList = Constants.driver.findElements(
 				By.cssSelector(PropertyUtility.getProperty("Chair_SubMenu_List", LivingPagePropertyPath)));
 		Constants.actualList = new ArrayList<String>();
-		Iterator<WebElement> itr = Chairlist.iterator();
+		Iterator<WebElement> itr = chairList.iterator();
 		while (itr.hasNext()) {
 			Constants.actualList.add(itr.next().getText());
 		}
@@ -126,6 +126,23 @@ public class LivingPageTest {
 		Keywords.loggerInfo("Verify actual 'Tables' text");
 	}
 
+	@Test(priority = 9)
+	public void get_Tables_SubMenuList() {
+		List<WebElement> tablesList = Constants.driver.findElements(
+				By.cssSelector(PropertyUtility.getProperty("Tables_SubMenu_List", LivingPagePropertyPath)));
+		Constants.actualList = new ArrayList<String>();
+		Iterator<WebElement> itr = tablesList.iterator();
+		while (itr.hasNext()) {
+			Constants.actualList.add(itr.next().getText());
+		}
+		System.out.println(("Actual Tables List :-" + Constants.actualList));
+		Keywords.readJsonFile(LivingPageJsonPath, "Tables");
+		// Assert.assertEquals(Constants.actualList, Constants.expectedList);
+		Keywords.loggerInfo("verify 'Tables' sub Menu List(Items) from Living Menu");
+		// test = extent.createTest("tc_3 verifying items present in 'Your Lists");
+		// test.log(Status.INFO, "verifing in 'Your Lists' items as per expected");
+	}
+
 	@Test(priority = 10)
 	public void get_Storage_SubMenuText() {
 		Constants.actual = livingpage.getStorageSubMenuText();
@@ -134,12 +151,46 @@ public class LivingPageTest {
 		Keywords.loggerInfo("Verify actual 'Storage' text");
 	}
 
+	@Test(priority = 11)
+	public void get_Storage_SubMenuList() {
+		List<WebElement> storageList = Constants.driver.findElements(
+				By.cssSelector(PropertyUtility.getProperty("Storage_SubMenu_List", LivingPagePropertyPath)));
+		Constants.actualList = new ArrayList<String>();
+		Iterator<WebElement> itr = storageList.iterator();
+		while (itr.hasNext()) {
+			Constants.actualList.add(itr.next().getText());
+		}
+		System.out.println(("Actual Storage List :-" + Constants.actualList));
+		Keywords.readJsonFile(LivingPageJsonPath, "Storage");
+		// Assert.assertEquals(Constants.actualList, Constants.expectedList);
+		Keywords.loggerInfo("verify 'Storage' sub Menu List(Items) from Living Menu");
+		// test = extent.createTest("tc_3 verifying items present in 'Your Lists");
+		// test.log(Status.INFO, "verifing in 'Your Lists' items as per expected");
+	}
+
 	@Test(priority = 12)
 	public void get_Balcony_And_Outdoor_SubMenuText() {
 		Constants.actual = livingpage.getBalcony_And_OutdoorSubMenuText();
 		Constants.expected = "Balcony & Outdoor";
 		Assert.assertEquals(Constants.actual, Constants.expected);
 		Keywords.loggerInfo("Verify actual 'Balcony & Outdoor' text");
+	}
+
+	@Test(priority = 13)
+	public void get_Balcony_And_Outdoor_SubMenu_List_SubMenuList() {
+		List<WebElement> balconyAndOutdoorList = Constants.driver.findElements(By
+				.cssSelector(PropertyUtility.getProperty("Balcony_And_Outdoor_SubMenu_List", LivingPagePropertyPath)));
+		Constants.actualList = new ArrayList<String>();
+		Iterator<WebElement> itr = balconyAndOutdoorList.iterator();
+		while (itr.hasNext()) {
+			Constants.actualList.add(itr.next().getText());
+		}
+		System.out.println(("Actual Balcony & Outdoor List :-" + Constants.actualList));
+		Keywords.readJsonFile(LivingPageJsonPath, "Balcony & Outdoor");
+		// Assert.assertEquals(Constants.actualList, Constants.expectedList);
+		Keywords.loggerInfo("verify 'Balcony & Outdoor' sub Menu List(Items) from Living Menu");
+		// test = extent.createTest("tc_3 verifying items present in 'Your Lists");
+		// test.log(Status.INFO, "verifing in 'Your Lists' items as per expected");
 	}
 
 	@AfterTest
