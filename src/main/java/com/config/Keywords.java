@@ -21,7 +21,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+<<<<<<< HEAD
 import org.testng.Assert;
+=======
+
+>>>>>>> bcad512805cb0041cd39885152254a646ae3e7cb
 
 import com.utility.PropertyUtility;
 
@@ -204,6 +208,23 @@ public class Keywords {
 	/*
 	 * This method is used to sleep methods
 	 * 
+<<<<<<< HEAD
+=======
+	 * @author Sujit Kolhe
+	 */
+	public static void sleep() {
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			System.out.println("Timeout: "+e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	/*
+	 * This method is used to sleep methods
+	 * 
+	 * @author Manisha Ramesh Mehtre
+>>>>>>> bcad512805cb0041cd39885152254a646ae3e7cb
 	 */
 	public static void sleep(int time) {
 		try {
@@ -232,10 +253,17 @@ public class Keywords {
 		}
 		Constants.jsonObj=(JSONObject)Constants.obj;
 		Constants.jsonArray=(JSONArray)Constants.jsonObj.get(key);
+<<<<<<< HEAD
 		System.out.println("Expected Size is:-"+Constants.jsonArray.size());	
 		Iterator itr = Constants.jsonArray.iterator();
 		while(itr.hasNext()) {
 			Constants.expected=(String) itr.next();
+=======
+		System.out.println("Size is:-"+Constants.jsonArray.size());	
+		Iterator itr = Constants.jsonArray.iterator();
+		while(itr.hasNext()) {
+			System.out.println("Expected List"+itr.next());
+>>>>>>> bcad512805cb0041cd39885152254a646ae3e7cb
 		}
 		Constants.expectedList = new ArrayList();
 		String[] getList = new String[ Constants.jsonArray.size()];
@@ -243,7 +271,14 @@ public class Keywords {
 			getList[i]=(String)Constants.jsonArray.get(i);
 			Constants.expectedList.add(i,getList[i]);
 		}
+<<<<<<< HEAD
 	}
+=======
+			System.out.println("Expected Size"+Constants.expectedList.size());
+	}
+	
+
+>>>>>>> bcad512805cb0041cd39885152254a646ae3e7cb
 
 	/**
 	 * This method is used to Close the current window, quitting the browser if it's

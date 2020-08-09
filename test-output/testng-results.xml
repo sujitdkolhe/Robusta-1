@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -105,6 +106,41 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- close_Window_And_quiteDriver -->
       </class> <!-- com.test.LivingPageTest -->
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="31342" started-at="2020-08-03T14:00:10Z" finished-at="2020-08-03T14:00:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="31342" started-at="2020-08-03T14:00:10Z" finished-at="2020-08-03T14:00:42Z">
+      <class name="com.test.StudyPageTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.test.StudyPageTest@4667ae56]" name="openBrowser" is-config="true" duration-ms="27363" started-at="2020-08-03T14:00:10Z" finished-at="2020-08-03T14:00:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="studyMenuDisplay()[pri:1, instance:com.test.StudyPageTest@4667ae56]" name="studyMenuDisplay" duration-ms="467" started-at="2020-08-03T14:00:38Z" finished-at="2020-08-03T14:00:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- studyMenuDisplay -->
+        <test-method status="PASS" signature="studyTablesSubmenu_Display()[pri:2, instance:com.test.StudyPageTest@4667ae56]" name="studyTablesSubmenu_Display" duration-ms="257" started-at="2020-08-03T14:00:38Z" finished-at="2020-08-03T14:00:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- studyTablesSubmenu_Display -->
+        <test-method status="PASS" signature="getStudyTablesSubmenuText()[pri:3, instance:com.test.StudyPageTest@4667ae56]" name="getStudyTablesSubmenuText" duration-ms="187" started-at="2020-08-03T14:00:39Z" finished-at="2020-08-03T14:00:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStudyTablesSubmenuText -->
+        <test-method status="PASS" signature="getStudyTablesItems()[pri:4, instance:com.test.StudyPageTest@4667ae56]" name="getStudyTablesItems" duration-ms="1021" started-at="2020-08-03T14:00:39Z" finished-at="2020-08-03T14:00:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStudyTablesItems -->
+        <test-method status="PASS" signature="close_Window_And_quiteDriver()[pri:0, instance:com.test.StudyPageTest@4667ae56]" name="close_Window_And_quiteDriver" is-config="true" duration-ms="1894" started-at="2020-08-03T14:00:40Z" finished-at="2020-08-03T14:00:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_Window_And_quiteDriver -->
+      </class> <!-- com.test.StudyPageTest -->
+>>>>>>> bcad512805cb0041cd39885152254a646ae3e7cb
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
