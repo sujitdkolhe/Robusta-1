@@ -8,7 +8,6 @@ import com.config.Constants;
 
 public class LivingPage {
 	@FindBy(css = "#topnav_wrapper>ul>li:nth-child(2)")
-<<<<<<< HEAD
 	private WebElement LivingLink;
 
 	@FindBy(xpath = "//a[text()='Sofa Set']")
@@ -28,33 +27,22 @@ public class LivingPage {
 
 	@FindBy(xpath = "//a[text()='Balcony & Outdoor']")
 	private WebElement Balcony_OutdoorLink;
-=======
-	private WebElement hoverOnLiving;
 
-	@FindBy(xpath = "//a[text()='Sofa Set']")
-	private WebElement hoverOnSofa_Set;
->>>>>>> bcad512805cb0041cd39885152254a646ae3e7cb
+
 
 	// This is to Initializing the page Objects
 	public LivingPage() {
 		PageFactory.initElements(Constants.driver, this);
 	}
-<<<<<<< HEAD
+
 
 	// This method is to check visibility of 'Living' menu title
 	public boolean visibilityOfLivingMenuLink() {
 		Constants.isDisplay = LivingLink.isDisplayed();
-=======
-  
-	// This method is to check visibility of 'Living' menu title
-	public boolean visibility_LivingMenuTitle() {
-		Constants.isDisplay = hoverOnLiving.isDisplayed();
->>>>>>> bcad512805cb0041cd39885152254a646ae3e7cb
 		return Constants.isDisplay;
 	}
 
 	// This method is to check visibility of 'Sofa Set' sub-menu title
-<<<<<<< HEAD
 	public boolean visibilityOf_Sofa_SetSubMenuLink() {
 		Constants.isDisplay = Sofa_SetLink.isDisplayed();
 		return Constants.isDisplay;
@@ -89,16 +77,5 @@ public class LivingPage {
 	public String getBalcony_And_OutdoorSubMenuText() {
 		return Balcony_OutdoorLink.getText();
 	}
-=======
-	public boolean visibility_Sofa_SetSubMenuTitle() {
-		Constants.isDisplay = hoverOnSofa_Set.isDisplayed();
-		return Constants.isDisplay;
-	}
-	
-   //This method is to check Text of 'Sofa Set' sub-menu title
-	public String  getSofa_SetSubMenuText() {
-		return hoverOnSofa_Set.getText();
 
-}
->>>>>>> bcad512805cb0041cd39885152254a646ae3e7cb
 }
